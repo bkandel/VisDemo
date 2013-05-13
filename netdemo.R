@@ -35,7 +35,7 @@ rgl.snapshot('age40s.png')
 rgl.pop()
 mynet<-subnet2
 locations <- list( vertices=centroids$vertices[mynet$nodelist,] )
-renderNetwork( mynet$network, locations )
+renderNetwork( mynet$network, locations, lwd=2 )
 rgl.snapshot('age77s.png')
 # try gc to reduce memory
 gc()
